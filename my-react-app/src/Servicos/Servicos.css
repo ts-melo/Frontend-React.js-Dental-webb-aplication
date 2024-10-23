@@ -1,0 +1,62 @@
+.servicos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.servicos h1{
+    padding-top: 10px;
+    color: #0292B7;
+    font-weight: 500;
+}
+
+.servicos-text{
+    columns: #8C756A;
+    color: #0292b7;
+}
+
+.servicos-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:30px;
+    text-align: center;
+    margin: 20px 0px;
+    overflow-x: scroll;
+}
+
+.servicos-list::-webkit-scrollbar{
+    display: none;
+}
+
+.servicos-list-item img{
+    width: 7.5vw;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 10%;
+    transition: 0.2s;
+}
+
+.servicos-list-item p{
+    color: #0292b7;
+    margin-top: 10px;
+    font-size: max(1.4vw, 16px);
+    cursor: pointer;
+}
+
+.servicos-list-item p:hover{
+    color:#8C756A;
+    transition: 0.3s;
+}
+
+.servicos hr{
+    margin: 10px 0px;
+    height: 2px;
+    background-color: #c6d1ef;
+    border: none;
+}
+
+.servicos-list-item .active{
+    border: 4px solid #0292B7;
+    padding: 2px;
+}
