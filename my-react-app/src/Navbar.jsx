@@ -1,8 +1,10 @@
 import './Navbar.css'
 import imagem from '../src/icone.jpg'
 import React, {useState} from  'react'
+import { Link } from 'react-router-dom';
 
-const Navbar = ()=>{
+
+const Navbar = ({setShowLogin})=>{
 
     const [menu, setMenu] = useState("Inicio");
 
@@ -11,13 +13,12 @@ const Navbar = ()=>{
             <img className="icone" src={imagem} alt="logo"></img>
             <h1 className="nome">Instituto Odontologico</h1>
             <ul className= "navbar-menu">
-                <li onClick={()=>setMenu("Inicio")}className= {menu==="Inicio"?"active":""}>Inicio</li>
-                <li onClick={()=>setMenu("Serviços")}className={menu==="Serviços"?"active":""}>Serviços</li>
-                <li onClick={()=>setMenu("Contato")}className={menu==="Contato"?"active":""}>Contato</li>
-                <li onClick={()=>setMenu("Profissionais")}className={menu==="Profissionais"?"active":""}>Profissionais</li>
-                <button>Registre-se</button>
+                <Link to='/' onClick={()=>setMenu("Inicio")}className= {menu==="Inicio"?"active":""}>Inicio</Link>
+                <a href='#servicos' onClick={()=>setMenu("Serviços")}className={menu==="Serviços"?"active":""}>Serviços</a>
+                <a href='#footer' onClick={()=>setMenu("Contato")}className={menu==="Contato"?"active":""}>Contato</a>
+                <Link to = '/profissionais' onClick={()=>setMenu("Profissionais")}className={menu==="Profissionais"?"active":""}>Profissionais</Link>
+                <button onClick={()=>setShowLogin(true)}>Registre-se</button>
             </ul>
-            
         </nav>
     )
 }

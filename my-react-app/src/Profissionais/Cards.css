@@ -1,0 +1,28 @@
+.doctor-card{
+    border: 2px solid teal;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
+    padding: 10px 10px;
+}
+
+.doctor-image{
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    transition: 0.3s;
+    animation: fadeIn 2s;
+    border: none;
+}
+
+.doctor-name {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.doctor-description {
+    font-size: 0.9em;
+    color: #555;
+}
