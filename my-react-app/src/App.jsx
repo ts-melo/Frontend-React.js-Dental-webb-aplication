@@ -22,7 +22,6 @@ function App() {
           <Routes>
             <Route path="/" element={<Inicio />} />
             <Route path="/profissionais" element={<Profissionais />} />
-            <Route path="/servicos" element={<Servicos />} />
           </Routes>
         </div>
         <Footer />

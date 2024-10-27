@@ -6,7 +6,7 @@ const Header = () => {
             <div className="header-contents">
                 <h2>Aqui você encontra a melhor equipe para cuidar do seu sorriso</h2>
                 <p>Agende já sua avaliação e recupere seu lindo sorriso! 😁</p>
-                <button>Contate-nos</button>
+                <a href='#footer'><button>Contate-nos</button></a>
             </div>
         </div>
     )
